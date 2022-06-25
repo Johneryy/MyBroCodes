@@ -9,4 +9,8 @@ public class Vehicle {
     void stop() {
         System.out.println("This vehicle stopped");
     }
+
+    void speed() {
+        System.out.println("The vehicle is speeding");
+    }
 }
