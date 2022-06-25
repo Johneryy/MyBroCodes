@@ -6,6 +6,7 @@ public class Main2 {
         System.out.println(human.name);
 
         human.eat();
+        human.drink();
 
     }
 }

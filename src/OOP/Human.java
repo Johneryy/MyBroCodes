@@ -11,9 +11,9 @@ public class Human {
         //constructor
     }
     void eat() {
-        System.out.println(this.name+"is eating");
+        System.out.println(this.name+" is eating");
     }
     void drink() {
-        System.out.println(this.name+ "is drinking");
+        System.out.println(this.name+" is drinking");
     }
 }
