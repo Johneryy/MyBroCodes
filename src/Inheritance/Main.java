@@ -7,6 +7,8 @@ public class Main {
         Bicycle bicycle = new Bicycle();
 //        bicycle.speed();
         System.out.println(bicycle.speed);
+        System.out.println(car.doors);
+        System.out.println(bicycle.pedals);
 
     }
 }
