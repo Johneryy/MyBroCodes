@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b85ab52b-62b9-4bde-8b46-9596df27895e" name="Changes" comment="practicals tho">
-      <change afterPath="$PROJECT_DIR$/src/OOP/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OOP/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OOP/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OOP/Main2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,20 +47,7 @@
       <recent name="C:\Users\user\IdeaProjects\PRACTICE\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OOP.Main">
-    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Calculator.Calculator" />
-      <module name="PRACTICE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main2">
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Practice.GUI" />
       <module name="PRACTICE" />
@@ -80,6 +67,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="TicTacToe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OOP.Main2" />
+      <module name="PRACTICE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OOP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main2" />
         <item itemvalue="Application.OOP.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.GUI" />
         <item itemvalue="Application.SnakeGame.Main" />
-        <item itemvalue="Application.Calculator" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +137,7 @@
       <workItem from="1656099969439" duration="1350000" />
       <workItem from="1656101350708" duration="249000" />
       <workItem from="1656101617072" duration="3019000" />
-      <workItem from="1656134049870" duration="8210000" />
+      <workItem from="1656134049870" duration="8815000" />
     </task>
     <task id="LOCAL-00001" summary="practicals tho">
       <created>1656093773437</created>
@@ -188,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656130387341</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="practicals tho">
+      <created>1656175118614</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656175118614</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
