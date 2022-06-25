@@ -8,5 +8,6 @@ public class Human {
         this.name = name;
         this.age = age;
         this.weight = weight;
+        //constructor
     }
 }
