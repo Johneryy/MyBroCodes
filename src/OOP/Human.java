@@ -10,4 +10,7 @@ public class Human {
         this.weight = weight;
         //constructor
     }
+    void eat() {
+        System.out.println(this.name+"is eating");
+    }
 }
