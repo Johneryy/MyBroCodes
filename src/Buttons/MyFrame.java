@@ -3,8 +3,10 @@ package Buttons;
 import javax.swing.JButton;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class MyFrame extends JFrame {
+public class MyFrame extends JFrame implements ActionListener {
     JButton button;
     JLabel label;
     MyFrame() {
@@ -13,7 +15,6 @@ public class MyFrame extends JFrame {
 
         button = new JButton();
         button.setBounds(100,100,200,100);
-        button.addActionListener(e -> System.out.println("I created this"));
         button.setText("Click");
         button.setFocusable(false);
         button.setIcon(icon1);
@@ -31,8 +32,6 @@ public class MyFrame extends JFrame {
         label.setBounds(150,250,150,150);
         label.setVisible(true);
 
-
-
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
         this.setSize(500,500);
@@ -40,5 +39,13 @@ public class MyFrame extends JFrame {
         this.add(button);
         this.add(label);
 
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == button) {
+
+
+        }
     }
 }
