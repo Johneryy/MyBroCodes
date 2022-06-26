@@ -55,6 +55,7 @@ public class Stopwatch implements ActionListener {
         frame.setLayout(null);
         frame.setVisible(true);
     }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == startButton) {
@@ -74,12 +75,15 @@ public class Stopwatch implements ActionListener {
             reset();
         }
     }
+
     void start() {
         timer.start();
     }
+
     void stop() {
         timer.stop();
     }
+
     void reset() {
         timer.stop();
         elapsedTime = 0;
