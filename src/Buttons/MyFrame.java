@@ -12,5 +12,6 @@ public class MyFrame extends JFrame {
         this.setLayout(null);
         this.setSize(500,500);
         this.setVisible(true);
+        this.add(button);
     }
 }
