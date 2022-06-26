@@ -101,8 +101,6 @@ public class TicTacToe implements ActionListener {
 
         } catch (InterruptedException e) {
 
-            // TODO Auto-generated catch block
-
             e.printStackTrace();
 
         }
@@ -372,9 +370,7 @@ public class TicTacToe implements ActionListener {
             buttons[i].setEnabled(false);
 
         }
-
         textfield.setText("X wins");
-
     }
 
     public void oWins(int a, int b, int c) {
@@ -393,6 +389,10 @@ public class TicTacToe implements ActionListener {
         }
 
         textfield.setText("O wins");
+
+    }
+
+    public void pauseAndPlay() {
 
     }
 
