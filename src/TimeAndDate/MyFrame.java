@@ -7,27 +7,16 @@ import java.util.Calendar;
 
 public class MyFrame extends JFrame {
 
-
     Calendar calendar;
-
     SimpleDateFormat timeFormat;
-
     SimpleDateFormat dayFormat;
-
     SimpleDateFormat dateFormat;
-
     JLabel timeLabel;
-
     JLabel dayLabel;
-
     JLabel dateLabel;
-
     String time;
-
     String day;
-
     String date;
-
 
     MyFrame() {
 
