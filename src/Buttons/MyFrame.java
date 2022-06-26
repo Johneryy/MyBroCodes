@@ -6,6 +6,7 @@ import java.awt.*;
 
 public class MyFrame extends JFrame {
     JButton button;
+    JLabel label;
     MyFrame() {
         ImageIcon icon = new ImageIcon("point.png");
 
@@ -17,9 +18,13 @@ public class MyFrame extends JFrame {
         button.setIcon(icon);
         button.setHorizontalTextPosition(JButton.CENTER);
         button.setVerticalTextPosition(JButton.BOTTOM);
-        button.setFont(new Font("Comic sans", Font.BOLD,30));
+        button.setFont(new Font("Georgia", Font.BOLD,35));
         button.setIconTextGap(-15);
         button.setForeground(Color.RED);
+        button.setBackground(Color.BLACK);
+
+        label = new JLabel();
+
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
