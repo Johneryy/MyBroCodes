@@ -16,6 +16,7 @@ public class MyFrame extends JFrame implements ActionListener {
         button = new JButton();
         button.setBounds(100,100,200,100);
         button.setText("Click");
+        button.addActionListener(this);
         button.setFocusable(false);
         button.setIcon(icon1);
         button.setHorizontalTextPosition(JButton.CENTER);
@@ -24,13 +25,12 @@ public class MyFrame extends JFrame implements ActionListener {
         button.setIconTextGap(-15);
         button.setForeground(Color.RED);
         button.setBackground(Color.BLACK);
-
+        button.setBorder(BorderFactory.createEtchedBorder());
 
         label = new JLabel();
-
         label.setIcon(icon2);
         label.setBounds(150,250,150,150);
-        label.setVisible(true);
+        label.setVisible(false);
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
@@ -44,8 +44,8 @@ public class MyFrame extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == button) {
-
-
+            label.setVisible(true);
+            button.setEnabled(true);
         }
     }
 }
