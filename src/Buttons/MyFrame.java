@@ -9,5 +9,4 @@ public class MyFrame extends JFrame {
         this.setSize(500,500);
         this.setVisible(true);
     }
-
 }
