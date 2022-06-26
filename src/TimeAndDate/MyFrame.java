@@ -19,23 +19,19 @@ public class MyFrame extends JFrame {
     String date;
 
     MyFrame() {
-
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        this.setTitle("My Clock Program");
-
+        this.setTitle("Johnery's First Clock Program");
         this.setLayout(new FlowLayout());
-
         this.setSize(350, 200);
 
         this.setResizable(false);
 
 
-        timeFormat = new SimpleDateFormat("hh:mm:ss a");
+        timeFormat = new SimpleDateFormat("HH:mm:ss a");
 
         dayFormat = new SimpleDateFormat("EEEE");
 
-        dateFormat = new SimpleDateFormat("MMMMM dd, yyyy");
+        dateFormat = new SimpleDateFormat("MM,dd,yyyy");
 
 
         timeLabel = new JLabel();
