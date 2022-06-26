@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
-        HashMap<String,String> countries = new HashMap<String,String>();
+        HashMap<String,String> countries = new HashMap<>();
 
         countries.put("USA","Washington DC");
         countries.put("India","New Delhi");
@@ -16,9 +16,5 @@ public class Main {
             System.out.print(i+"\t"+"= ");
             System.out.println(countries.get(i));
         }
-
-
-
     }
-
 }
