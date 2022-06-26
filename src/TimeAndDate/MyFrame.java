@@ -23,49 +23,29 @@ public class MyFrame extends JFrame {
         this.setTitle("Johnery's First Clock Program");
         this.setLayout(new FlowLayout());
         this.setSize(350, 200);
-
         this.setResizable(false);
 
-
         timeFormat = new SimpleDateFormat("HH:mm:ss a");
-
         dayFormat = new SimpleDateFormat("EEEE");
-
         dateFormat = new SimpleDateFormat("MM,dd,yyyy");
 
-
         timeLabel = new JLabel();
-
         timeLabel.setFont(new Font("Verdana", Font.PLAIN, 50));
-
         timeLabel.setForeground(new Color(0x00FF00));
-
         timeLabel.setBackground(Color.black);
-
         timeLabel.setOpaque(true);
 
-
         dayLabel = new JLabel();
-
         dayLabel.setFont(new Font("Ink Free", Font.PLAIN, 35));
-
-
         dateLabel = new JLabel();
-
         dateLabel.setFont(new Font("Ink Free", Font.PLAIN, 25));
 
-
         this.add(timeLabel);
-
         this.add(dayLabel);
-
         this.add(dateLabel);
-
         this.setVisible(true);
 
-
         setTime();
-
     }
 
 
