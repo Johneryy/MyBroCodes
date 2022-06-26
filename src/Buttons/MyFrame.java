@@ -8,14 +8,15 @@ public class MyFrame extends JFrame {
     JButton button;
     JLabel label;
     MyFrame() {
-        ImageIcon icon = new ImageIcon("point.png");
+        ImageIcon icon1 = new ImageIcon("point.png");
+        ImageIcon icon2 = new ImageIcon("face.png");
 
         button = new JButton();
         button.setBounds(100,100,200,100);
         button.addActionListener(e -> System.out.println("I created this"));
         button.setText("Click");
         button.setFocusable(false);
-        button.setIcon(icon);
+        button.setIcon(icon1);
         button.setHorizontalTextPosition(JButton.CENTER);
         button.setVerticalTextPosition(JButton.BOTTOM);
         button.setFont(new Font("Georgia", Font.BOLD,35));
@@ -23,7 +24,13 @@ public class MyFrame extends JFrame {
         button.setForeground(Color.RED);
         button.setBackground(Color.BLACK);
 
+
         label = new JLabel();
+
+        label.setIcon(icon2);
+        label.setBounds(150,250,150,150);
+        label.setVisible(true);
+
 
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -31,5 +38,7 @@ public class MyFrame extends JFrame {
         this.setSize(500,500);
         this.setVisible(true);
         this.add(button);
+        this.add(label);
+
     }
 }
