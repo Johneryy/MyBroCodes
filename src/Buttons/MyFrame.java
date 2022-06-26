@@ -2,8 +2,10 @@ package Buttons;
 
 import javax.swing.JButton;
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class MyFrame extends JFrame {
+public class MyFrame extends JFrame  implements ActionListener {
     MyFrame() {
 
         JButton button = new JButton();
@@ -13,5 +15,10 @@ public class MyFrame extends JFrame {
         this.setSize(500,500);
         this.setVisible(true);
         this.add(button);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
     }
 }
