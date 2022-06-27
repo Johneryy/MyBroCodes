@@ -44,7 +44,6 @@ public class GamePanel extends JPanel implements ActionListener {
         draw(g);
     }
     public void draw(Graphics g) {
-
         if(running) {
             for (int i = 0; i < SCREEN_HEIGHT/UNIT_SIZE; i++) {
                 g.drawLine(i*UNIT_SIZE,0,i*UNIT_SIZE,SCREEN_HEIGHT);
@@ -64,7 +63,7 @@ public class GamePanel extends JPanel implements ActionListener {
                 }
             }
             g.setColor(Color.RED);
-            g.setFont(new Font("Ink Free", Font.BOLD,40));
+            g.setFont(new Font("Comic sans", Font.BOLD,40));
             FontMetrics metrics = getFontMetrics(g.getFont());
             g.drawString("Your Score is -> "+applesEaten,(SCREEN_WIDTH - metrics.stringWidth("Your Score is ->"+applesEaten))/2,g.getFont().getSize());
         }
