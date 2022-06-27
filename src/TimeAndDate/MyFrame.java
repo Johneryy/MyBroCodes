@@ -32,7 +32,7 @@ public class MyFrame extends JFrame {
         timeLabel = new JLabel();
         timeLabel.setFont(new Font("Verdana", Font.PLAIN, 50));
         timeLabel.setForeground(new Color(0x00FF00));
-        timeLabel.setBackground(Color.black);
+        timeLabel.setBackground(Color.RED);
         timeLabel.setOpaque(true);
 
         dayLabel = new JLabel();
