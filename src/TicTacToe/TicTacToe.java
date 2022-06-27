@@ -7,22 +7,13 @@ import java.awt.event.ActionListener;
 import java.util.Random;
 
 public class TicTacToe implements ActionListener {
-
-
     Random random = new Random();
-
     JFrame frame = new JFrame();
-
     JPanel title_panel = new JPanel();
-
     JPanel button_panel = new JPanel();
-
     JLabel textfield = new JLabel();
-
     JButton[] buttons = new JButton[9];
-
     boolean player1_turn;
-
     TicTacToe() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 800);
@@ -90,8 +81,6 @@ public class TicTacToe implements ActionListener {
         }
 
     }
-
-
     public void firstTurn() {
 
 
@@ -121,8 +110,6 @@ public class TicTacToe implements ActionListener {
         }
 
     }
-
-
     public void check() {
 
         //check X win conditions
@@ -354,25 +341,15 @@ public class TicTacToe implements ActionListener {
         }
 
     }
-
-
     public void xWins(int a, int b, int c) {
-
         buttons[a].setBackground(Color.GREEN);
-
         buttons[b].setBackground(Color.GREEN);
-
         buttons[c].setBackground(Color.GREEN);
-
-
         for (int i = 0; i < 9; i++) {
-
             buttons[i].setEnabled(false);
-
         }
         textfield.setText("X wins");
     }
-
     public void oWins(int a, int b, int c) {
 
         buttons[a].setBackground(Color.GREEN);
@@ -391,9 +368,6 @@ public class TicTacToe implements ActionListener {
         textfield.setText("O wins");
 
     }
-
     public void pauseAndPlay() {
-
     }
-
 }
