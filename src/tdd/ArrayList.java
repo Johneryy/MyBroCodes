@@ -15,10 +15,10 @@ public class ArrayList implements List{
         if(size == capacity-1) {
             int oldCap = capacity;
             capacity*=2;
-            String [] freshArray = new String[capacity];
+            String [] newArray = new String[capacity];
             System.arraycopy(elements,0,
-                    freshArray,0,oldCap);
-            elements = freshArray;
+                    newArray,0,oldCap);
+            elements = newArray;
         }
         elements[size++] = item;
     }
