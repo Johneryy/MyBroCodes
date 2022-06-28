@@ -74,5 +74,13 @@ public class ListTest {
         String gotten = list.get(0);
         assertEquals("G-String",gotten);
     }
-
+    @Test
+    public void addX_YandZ_removeX_getX_shouldReturnYTest() {
+        list.add("G-String");
+        list.add("A-String");
+        list.add("E-String");
+        list.remove("G-String");
+        String gotten = list.get(0);
+        assertEquals("A-String",gotten);
+    }
 }

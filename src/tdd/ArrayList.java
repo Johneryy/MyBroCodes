@@ -1,9 +1,11 @@
 package tdd;
 
+import java.util.Objects;
+
 public class ArrayList implements List{
-    private boolean isEmpty = true;
+    private final boolean isEmpty = true;
     private int size;
-    private String[] elements = new String[8];
+    private final String[] elements = new String[8];
 
     @Override
     public boolean isEmpty() {
@@ -16,6 +18,11 @@ public class ArrayList implements List{
     }
     @Override
     public  void remove(String item) {
+        for (int i = 0; i < size; i++) {
+            if(Objects.equals(item, elements[i])) {
+                System.arraycopy(elements, i + 1, elements, i, size - i);
+            }
+        }
         size--;
     }
     @Override
