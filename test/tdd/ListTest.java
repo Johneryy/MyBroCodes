@@ -83,4 +83,15 @@ public class ListTest {
         String gotten = list.get(0);
         assertEquals("A-String",gotten);
     }
+    @Test
+    public void addSixElement_capacityShouldDoubleTest() {
+        assertEquals(5, list.capacity());
+        list.add("G-String");
+        list.add("A-String");
+        list.add("E-String");
+        list.add("F-String");
+        list.add("D-String");
+        list.add("E-String");
+        assertEquals(10, list.capacity());
+    }
 }

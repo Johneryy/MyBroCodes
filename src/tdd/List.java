@@ -10,4 +10,6 @@ public interface List {
     int size();
 
     String get(int index);
+
+    int capacity();
 }

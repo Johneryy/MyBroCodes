@@ -1,9 +1,9 @@
 package tdd;
 
 public class ArrayList implements List{
-    private final boolean isEmpty = true;
     private int size;
-    private final String[] elements = new String[8];
+    private int capacity = 5;
+    private String[] elements = new String[capacity];
 
     @Override
     public boolean isEmpty() {
@@ -12,8 +12,17 @@ public class ArrayList implements List{
 
     @Override
     public void add(String item) {
+        if(size == capacity-1) {
+            int oldCap = capacity;
+            capacity*=2;
+            String [] freshArray = new String[capacity];
+            System.arraycopy(elements,0,
+                    freshArray,0,oldCap);
+            elements = freshArray;
+        }
         elements[size++] = item;
     }
+
     @Override
     public  void remove(String item) {
         for (int i = 0; i < size; i++) {
@@ -35,4 +44,8 @@ public class ArrayList implements List{
         return elements[index];
     }
 
+    @Override
+    public int capacity() {
+        return capacity;
+    }
 }
