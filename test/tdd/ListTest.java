@@ -39,6 +39,7 @@ public class ListTest {
     public void addX_addY_sizeIsTwoTest() {
         list.add("G-String");
         list.add("A-String");
+        assertEquals(2,list.size());
     }
     @Test
     public void addX_addY_removeX_sizeIsTwoTest() {
