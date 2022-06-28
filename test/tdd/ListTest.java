@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 
 public class ListTest {
@@ -21,7 +22,7 @@ public class ListTest {
     @Test
     public void addItem_listIsNotEmpty() {
         list.add("G-String");
-        Assertions.assertFalse(list.isEmpty());
+        assertFalse(list.isEmpty());
     }
     @Test
     public void addItem_removeItem_listIsNotEmpty() {
@@ -45,5 +46,12 @@ public class ListTest {
         list.add("A-String");
         list.remove("A-String");
         assertEquals(1,list.size());
+    }
+    @Test
+    public void addX_addY_listIsNotEmptyTest() {
+        list.add("G-String");
+        list.add("A-String");
+        list.remove("A-String");
+       assertFalse(list.isEmpty());
     }
 }
