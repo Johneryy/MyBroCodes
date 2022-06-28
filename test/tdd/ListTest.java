@@ -46,5 +46,4 @@ public class ListTest {
         list.remove("A-String");
         assertEquals(1,list.size());
     }
-
 }
