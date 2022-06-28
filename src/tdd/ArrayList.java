@@ -1,7 +1,5 @@
 package tdd;
 
-import java.util.Objects;
-
 public class ArrayList implements List{
     private final boolean isEmpty = true;
     private int size;
@@ -19,8 +17,10 @@ public class ArrayList implements List{
     @Override
     public  void remove(String item) {
         for (int i = 0; i < size; i++) {
-            if(Objects.equals(item, elements[i])) {
-                System.arraycopy(elements, i + 1, elements, i, size - i);
+            if(item == elements[i]) {
+                for (int j = i; j < size; j++) {
+                    elements[j] = elements[j + 1];
+                }
             }
         }
         size--;
