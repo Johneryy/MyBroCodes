@@ -17,7 +17,7 @@ public class ArrayList implements List{
     @Override
     public  void remove(String item) {
         isEmpty = true;
-        --size;
+        size--;
     }
     @Override
     public int size() {
