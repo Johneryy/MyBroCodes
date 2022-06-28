@@ -54,4 +54,25 @@ public class ListTest {
         list.remove("A-String");
        assertFalse(list.isEmpty());
     }
+    @Test
+    public void addX_retrieveXTest() {
+        list.add("G-String");
+        String gotten = list.get(0);
+        assertEquals("G-String",gotten);
+    }
+    @Test
+    public void addXandY_retrieveYTest() {
+        list.add("G-String");
+        list.add("A-String");
+        String gotten = list.get(1);
+        assertEquals("A-String",gotten);
+    }
+    @Test
+    public void addXandY_retrieveXTest() {
+        list.add("G-String");
+        list.add("A-String");
+        String gotten = list.get(0);
+        assertEquals("G-String",gotten);
+    }
+
 }

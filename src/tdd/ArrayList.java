@@ -3,25 +3,29 @@ package tdd;
 public class ArrayList implements List{
     private boolean isEmpty = true;
     private int size;
+    private String[] elements = new String[8];
 
     @Override
     public boolean isEmpty() {
-        return isEmpty;
+        return size == 0;
     }
 
     @Override
     public void add(String item) {
-        isEmpty = false;
-        size++;
+        elements[size++] = item;
     }
     @Override
     public  void remove(String item) {
-        isEmpty = true;
         size--;
     }
     @Override
     public int size() {
-      return 1;
+      return size;
+    }
+
+    @Override
+    public String get(int index) {
+        return elements[index];
     }
 
 }

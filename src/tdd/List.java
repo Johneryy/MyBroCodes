@@ -8,4 +8,6 @@ public interface List {
     void remove(String item);
 
     int size();
+
+    String get(int index);
 }
