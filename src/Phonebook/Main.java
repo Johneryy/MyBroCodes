@@ -30,6 +30,7 @@ public class Main {
                         addressBook.deletePerson(s);
                         break;
                     case 4:
+                        addressBook.savePersons();
                         System.exit(0);
                 }
             }
