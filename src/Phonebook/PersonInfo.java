@@ -13,7 +13,7 @@ public class PersonInfo {
         }
 
         void display() {
-            JOptionPane.showMessageDialog(null, "Name: " + name + "PhoneNumber: " + phoneNumber);
+            JOptionPane.showMessageDialog(null, "Name: " + name +"\nPhoneNumber: " + phoneNumber);
         }
     }
 
