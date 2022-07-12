@@ -6,7 +6,7 @@ public class Main {
         public static void main(String[] args) {
             AddressBook addressBook = new AddressBook();
             String input, s;
-            int ch;
+            int command;
 
             while(true) {
                 input = JOptionPane.showInputDialog("""
@@ -15,9 +15,9 @@ public class Main {
                     3.Enter 3 to Delete
                     4.Enter 4 to Exit
                     """);
-                ch = Integer.parseInt(input);
+                command = Integer.parseInt(input);
 
-                switch (ch) {
+                switch (command) {
                     case 1:
                         addressBook.addPersons();
                         break;
