@@ -2,7 +2,7 @@ package Phonebook;
 
 import javax.swing.*;
 import java.io.*;
-import java.util.ArrayList;
+import java.util.*;
 
 public class AddressBook {
     static ArrayList persons;
@@ -18,9 +18,9 @@ public class AddressBook {
         persons.add(personInfo);
     }
     void searchPerson(String name) {
-        for (int i = 0; i < persons.size(); i++) {
-            PersonInfo personInfo = (PersonInfo) persons.get(i);
-            if(name.equals(personInfo.name)) {
+        for (Object person : persons) {
+            PersonInfo personInfo = (PersonInfo) person;
+            if (name.equals(personInfo.name)) {
                 personInfo.display();
             }
         }
@@ -39,10 +39,10 @@ public class AddressBook {
             String line;
             FileWriter fileWriter = new FileWriter("Persons.txt");
             PrintWriter printWriter = new PrintWriter(fileWriter);
-            for (int i = 0; i < persons.size(); i++) {
-               personInfo = (PersonInfo) persons.get(i);
-               line = personInfo.name + "," + personInfo.phoneNumber + ",";
-               printWriter.println(line);
+            for (Object person : persons) {
+                personInfo = (PersonInfo) person;
+                line = personInfo.name + "," + personInfo.phoneNumber + ",";
+                printWriter.println(line);
             }
             printWriter.flush();
             printWriter.close();

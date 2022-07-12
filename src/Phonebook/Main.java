@@ -18,20 +18,19 @@ public class Main {
                 command = Integer.parseInt(input);
 
                 switch (command) {
-                    case 1:
-                        addressBook.addPersons();
-                        break;
-                    case 2:
+                    case 1 -> AddressBook.addPersons();
+                    case 2 -> {
                         s = JOptionPane.showInputDialog("Enter name to Search: ");
                         addressBook.searchPerson(s);
-                        break;
-                    case 3:
+                    }
+                    case 3 -> {
                         s = JOptionPane.showInputDialog("Enter name to Delete");
                         addressBook.deletePerson(s);
-                        break;
-                    case 4:
+                    }
+                    case 4 -> {
                         addressBook.savePersons();
                         System.exit(0);
+                    }
                 }
             }
         }
