@@ -52,7 +52,7 @@ public class AddressBook {
         }
     }
     void loadPersons() {
-        String token[] = null;
+        String[] token = null;
         String name,phoneNumber;
         try{
             FileReader fileReader = new FileReader("Persons.txt");
