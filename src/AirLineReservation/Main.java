@@ -37,7 +37,7 @@ public class Main {
         calculateSquareRoot(number);
 
     }
-
+     
     private String getPassengerName(int seatNumber) {
         return passengerName[seatNumber - 1];
     }
